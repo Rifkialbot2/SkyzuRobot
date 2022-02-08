@@ -83,8 +83,33 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @skyzu ✨
+Halo 👋 , Broo ,
+
+Nama saya Iki Robot.
+
+Saya adalah seorang Robot Manager Apa Yang Bisa saya bantu?
+
+👑 Owner
+
+└ @kingswibu
+
+🤖 Bot saya : 
+
+└ @Zmytrixsrobot
+
+📺 join Grup :
+
+└ @wibucringe00
+
+Jika ada pertanyaan atau masalah yang lain bisa hubungi 
+
+Owner : @kingswibu
+
+Terimakasih!
+
+Semua perintah dapat digunakan dengan: /
+
+
 ────────────────────────
 Hit the /help to see available command.
 """
@@ -99,7 +124,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://yandex.com"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
@@ -371,7 +396,7 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *@kingswibu*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -379,7 +404,7 @@ def Skyzu_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for SkyzuRobot.",
+            "\n\n Click on button bellow to get basic help for IkiRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -460,14 +485,14 @@ def Skyzu_about_callback(update, context):
     elif query.data == "Skyzu_support":
         query.message.edit_text(
             text=f"*๏ {dispatcher.bot.first_name} support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Skyzu.",
+            "\nJoin My Support Group/Channel for see or report a problem on @kingswibu.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
+                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/wibucringe00"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/ProjectSkyzu"
+                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/gabutinaja00"
                         ),
                     ],
                     [
@@ -479,13 +504,13 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
+            text=f"<b>๏ Credis for iki</b>\n"
             f"\nHere Developers Making The SkyzuRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
+                        InlineKeyboardButton(text="Skyzu", url="t.me/kingswibu"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
